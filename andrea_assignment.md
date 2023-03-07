@@ -6,9 +6,9 @@ When you share and update projects using Git, you’ll use some or all of the fo
 - `git fetch` - Download changes from a remote repository to your local repository without merging them.
 - `git push` - Download changes from a remote repository and then merge them into your local repository.
 
-It’s important to understand what each command does so that you can choose the right command for the right task.
+It’s important to understand what each command does so that you can choose the right command for your task.
 
-The `git pull` command downloads changes from a remote repository and then merges them into your local repository. Internally, the `git pull` command runs `git fetch` followed immediately by `git merge`, or `git rebase` if you use the `--rebase` flag.
+The `git pull` command downloads changes from a remote repository and then merges them into your local repository. Internally, the `git pull` command uses `git fetch` followed immediately by `git merge`, or `git rebase` if you use the `--rebase` flag.
 
 In some cases, you might want to run `git fetch` instead of `git pull` to make sure you understand the changes before merging them. The `git fetch` command downloads changes from a remote repository to your local repository without merging them. Git isolates the changes so that they don’t affect your local branch. After running `git fetch`, you can choose to run  `git merge origin/<branch>` or `git pull` to merge the changes into your local branch. The `git merge` command has many other use cases that aren’t covered here. Learn more about `git merge`. <!--should we add a link here?-->
 
